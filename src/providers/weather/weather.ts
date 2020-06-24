@@ -19,7 +19,7 @@ export class WeatherProvider {
   private apikey: string = '7441693e282f0a48b0a03ef2b4626628';
   private url: string = '';
   constructor(public http: HttpClient) {
-    this.url = 'http://api.openweathermap.org/data/2.5/weather?q=';
+    this.url = 'https://api.openweathermap.org/data/2.5/weather?q=';
   }
 
   //this function once invoked will add the country and city along with the information from above and parse it together
