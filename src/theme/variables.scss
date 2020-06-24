@@ -34,41 +34,86 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #6495ed,
+  secondary:  #435d8c,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #ffffff,
   dark:       #222
 );
 
+// Top Toolbar
+$toolbar-md-background: color($colors, secondary);
+
+// Bottom tabs
+$tabs-md-background: rgba(color($colors, dark),.5);
+$tabs-md-tab-color-active: color($colors, light);
+$tabs-md-tab-color:color($colors, light);
+$tabs-md-tab-text-color: color($colors, light);
+
+$list-md-background-color:rgba(color($colors, dark),0) ;
+$list-md-text-color:color($colors, light);
+
+//input styling
+$text-input-md-highlight-color: "transparent";
+$text-input-md-highlight-color-invalid : "transparent";
+$text-input-md-highlight-color-valid : "transparent";
+$text-input-md-background-color : "transparent";
+$text-input-md-show-focus-highlight : "transparent";
+$text-input-md-show-invalid-highlight: "transparent";
+$text-input-md-show-valid-highlight : "transparent";
+$text-input-md-show-success-highlight:      false;
+$text-input-md-show-error-highlight:        false;
+// Input highlight - normal
+$text-input-md-highlight-color:             "transparent";
+
+// Input highlight - valid
+$text-input-md-hightlight-color-valid:      "transparent";
+
+// Input highlight - invalid
+$text-input-md-hightlight-color-invalid:    "transparent";
+
+
+
+
+
 
 // App iOS Variables
-// --------------------------------------------------
-// iOS only Sass variables can go here
 
 
+// Top Toolbar
+$toolbar-ios-background: color($colors, secondary);
 
+// Bottom tabs
+$tabs-ios-background: rgba(color($colors, dark),.5);
+$tabs-ios-tab-color-active: color($colors, light);
+$tabs-ios-tab-color:color($colors, light);
+$tabs-ios-tab-text-color: color($colors, light);
 
-// App Material Design Variables
-// --------------------------------------------------
-// Material Design only Sass variables can go here
+$list-ios-background-color:rgba(color($colors, dark),0) ;
+$list-ios-text-color:color($colors, light);
 
+//input styling
+$text-input-ios-highlight-color: "transparent";
+$text-input-ios-highlight-color-invalid : "transparent";
+$text-input-ios-highlight-color-valid : "transparent";
+$text-input-ios-background-color : "transparent";
+$text-input-ios-show-focus-highlight : "transparent";
+$text-input-ios-show-invalid-highlight: "transparent";
+$text-input-ios-show-valid-highlight : "transparent";
+$text-input-ios-show-success-highlight:      false;
+$text-input-ios-show-error-highlight:        false;
+// Input highlight - normal
+$text-input-ios-highlight-color:             "transparent";
 
+// Input highlight - valid
+$text-input-ios-hightlight-color-valid:      "transparent";
 
+// Input highlight - invalid
+$text-input-ios-hightlight-color-invalid:    "transparent";
 
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
+//placeholder text colour
+$text-input-placeholder-color: color($colors, light);
 
-
-
-
-// App Theme
-// --------------------------------------------------
-// Ionic apps can have different themes applied, which can
-// then be future customized. This import comes last
-// so that the above variables are used and Ionic's
-// default are overridden.
 
 @import "ionic.theme.default";
 
